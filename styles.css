@@ -244,7 +244,7 @@ h1 {
 }
 
 .prog {
-  background-color: rgb(61, 64, 71, 0.5);
+  background-color: rgb(61, 64, 71, 0.7);
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -267,7 +267,7 @@ h1 {
 
 .prog p {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
@@ -335,5 +335,50 @@ h1 {
     text-transform: uppercase;
     text-decoration: underline;
     padding-top: 3rem;
+    word-spacing: 0.3rem;
   }
+}
+
+.partner {
+  background: #424146;
+  height: auto;
+}
+
+.h3_partner {
+  color: #9e9ea0;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.hr_partner {
+  width: 7%;
+  border-radius: 1px;
+  margin: 0 auto;
+  border-color: var(--color-secondary);
+}
+
+.partner ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style: none;
+  gap: 0.1rem 5rem;
+  padding: 3rem 1rem;
+}
+
+.brandLogo {
+  width: 12rem;
+  height: 8rem;
+  filter: invert(65%) sepia(2%) saturate(42%) hue-rotate(316deg) brightness(85%) contrast(93%);
+}
+
+#hilton {
+  height: 4.2rem;
+  margin-top: 2.3rem;
 }
