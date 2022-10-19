@@ -32,12 +32,12 @@ body {
 /* Home Page Section */
 
 .homePage {
-  background-image: url(./images/bg-mobile.png);
+  background-image: url(./images/bg-mobile-2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
   background-color: rgb(245, 245, 245);
-  height: 60rem;
+  height: 65rem;
   display: flex;
   flex-direction: column;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .mainTitle {
-  margin: 12rem auto 3rem 2rem;
+  margin: 9rem auto 3rem 2rem;
 }
 
 .hello {
@@ -142,7 +142,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 h1 {
@@ -152,36 +153,41 @@ h1 {
   font-style: normal;
   font-size: 3rem;
   line-height: 3.2rem;
+  text-align: center;
 }
 
-.place {
-  background: var(--color-bg);
-  border: 3px solid #fff;
+.description {
+  background: #fff;
+  border: 2px solid #eee;
   color: var(--color-text);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.5rem;
   padding: 1.6rem;
   width: 90%;
   margin: 0 auto 2rem 2rem;
+  text-align: center;
 }
 
-.date {
+.contact {
   color: var(--color-text);
-  font-family: Coco;
   font-style: normal;
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   line-height: 2rem;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 0 2rem;
+  text-align: center;
+  width: 90%;
 }
 
-.venue {
+.email {
   color: var(--color-text);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   margin: 1rem 2rem;
+  text-align: center;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -198,7 +204,7 @@ h1 {
   }
 
   .homePage {
-    background-image: url(./images/bg.png);
+    background-image: url(./images/about-bg.png);
   }
 
   .mainTitle {
@@ -206,164 +212,117 @@ h1 {
   }
 
   .hello {
-    font-size: 3rem;
+    display: none;
   }
 
   h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
-    width: 60%;
+    width: 80%;
   }
 
-  .place {
-    width: 45%;
-    margin-left: 15rem;
+  .description {
+    margin: 1rem auto;
+    width: 80%;
   }
 
-  .date {
-    margin-left: 15rem;
+  .contact {
   }
 
-  .venue {
-    margin-left: 15rem;
+  .email {
   }
 }
 
-/* Main Program Section */
+/* Logo Section */
 
-.mainProgram {
-  background-image: url(./images/bg-main-program.png);
-  background-size: cover;
-  background-position: top center;
-  height: 78rem;
+.summitLogo {
+  background: #fff;
+  height: auto;
 }
 
-.h3_main {
-  color: #fff;
-  font-size: 2rem;
+.h3_logo {
+  color: #121212;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
+  line-height: 3.5rem;
   text-align: center;
-  padding: 3.5rem 1rem 1.6rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
-.hr_main {
-  width: 10%;
+.hr_logo {
+  width: 7%;
   border-radius: 1px;
   margin: 0 auto;
   border-color: var(--color-secondary);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  place-items: center;
-  margin: 4rem 3rem 3rem 3rem;
-}
-
-.prog {
-  background-color: rgb(61, 64, 71, 0.7);
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 3rem;
-}
-
-.prog img {
-  filter: invert(93%) sepia(0%) saturate(1%) hue-rotate(169deg) brightness(109%) contrast(102%);
-  width: 4rem;
-}
-
-.prog h4 {
-  color: var(--color-secondary);
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 600;
-}
-
-.prog p {
-  color: #fff;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem;
-}
-
-.join {
-  background: var(--color-secondary);
-  color: #fff;
+.selectionLogo {
+  color: var(--color-text);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem;
-  padding: 3rem 6rem;
-  display: flex;
-  margin: 0 auto;
+  line-height: 2.5rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
-.seeMore {
-  display: none;
+.logoImage {
+  border: 2px solid #eee;
+  padding: 4rem;
+  width: 90%;
+  text-align: center;
+  margin: 4rem 5%;
 }
 
-@media screen and (min-width: 768px) {
-  .mainProgram {
-    height: 100%;
-    padding-bottom: 10rem;
-  }
-
-  .h3_main {
-    padding-top: 5rem;
-    font-size: 3rem;
-    font-weight: 400;
-  }
-
-  .hr_main {
-    width: 7%;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1rem;
-    margin: 4rem 5%;
-  }
-
-  .prog {
-    flex-direction: column;
-  }
-
-  .prog p {
-    text-align: center;
-  }
-
-  .join {
-    display: none;
-  }
-
-  .seeMore {
-    display: flex;
-    color: #fff;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2rem;
-    justify-content: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-    padding-top: 3rem;
-    word-spacing: 0.3rem;
-  }
+.logoImage img {
+  width: 26rem;
+  height: 10rem;
 }
 
-/* Speakers Section */
-/* #me {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-} */
+.divider {
+  border: 1px solid #eee;
+}
+@media screen and (min-width: 768px) { 
+    .selectionLogo {
+        width: 50%;
+        margin: 1rem auto;
+    }
+    .logoImage {
+        width: 50%;
+        margin: 4rem auto;
+    }
+}
+
+/* Past Events Section */
+
+.imgChamp {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.firstChamp,
+.secondChamp {
+  display: flex;
+  align-self: center;
+  background-image: url(./images/wmc2017.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+  width: 44rem;
+  height: 24rem;
+}
+
+.secondChamp {
+  background-image: url(./images/wmc2019.webp);
+}
+
+@media screen and (min-width: 768px) { 
+
+}
 
 /* Partner Section */
 
@@ -373,7 +332,7 @@ h1 {
 }
 
 .h3_partner {
-  color: #9e9ea0;
+  color: #fff;
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;
@@ -413,14 +372,14 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .hr_partner {
-    width: 4%;
+      width: 4%;
+    }
   }
-}
 
 /* Footer */
 
 .footerHome {
-  background: #f2f2f2;
+  background: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -436,7 +395,7 @@ h1 {
 }
 
 .footerHome p {
-  color: #000000;
+  color: #000;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 300;
