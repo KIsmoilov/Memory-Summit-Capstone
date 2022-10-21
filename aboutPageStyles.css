@@ -109,7 +109,7 @@ body {
     height: 100vh;
     background-color: rgb(39, 42, 49, 0.98);
     padding-top: 5rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
     z-index: 99;
   }
 
@@ -182,7 +182,7 @@ body {
 h1 {
   text-transform: uppercase;
   color: var(--color-secondary);
-  font-family: Coco;
+  font-family: 'Coco', sans-serif;
   font-style: normal;
   font-size: 3rem;
   line-height: 3.2rem;
@@ -290,14 +290,16 @@ h1 {
   }
 
   .description {
-    margin: 1rem auto;
-    width: 80%;
+    margin: 3rem auto;
+    width: 70%;
   }
 
   .contact {
+    padding-top: 3rem;
   }
 
   .email {
+    padding-top: 1rem;
   }
 }
 
@@ -319,7 +321,7 @@ h1 {
 }
 
 .hr_logo {
-  width: 7%;
+  width: 10%;
   border-radius: 1px;
   margin: 0 auto;
   border-color: var(--color-secondary);
@@ -422,7 +424,7 @@ h1 {
 }
 
 .hr_partner {
-  width: 7%;
+  width: 10%;
   border-radius: 1px;
   margin: 0 auto;
   border-color: var(--color-secondary);
@@ -456,7 +458,7 @@ h1 {
   }
 
   .hr_partner {
-    width: 4%;
+    width: 5%;
   }
 }
 
@@ -469,7 +471,7 @@ h1 {
   align-items: flex-end;
   justify-content: space-evenly;
   gap: 4rem;
-  padding: 4rem 2rem;
+  padding: 3rem 0 2rem 0;
 }
 
 .footerImg {

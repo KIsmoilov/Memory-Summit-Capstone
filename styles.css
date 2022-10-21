@@ -37,7 +37,7 @@ body {
   background-size: 100%;
   background-position: top center;
   background-color: rgb(245, 245, 245);
-  height: 60rem;
+  height: 63rem;
   display: flex;
   flex-direction: column;
 }
@@ -109,7 +109,7 @@ body {
     height: 100vh;
     background-color: rgb(39, 42, 49, 0.98);
     padding-top: 5rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
     z-index: 99;
   }
 
@@ -181,7 +181,7 @@ body {
 h1 {
   text-transform: uppercase;
   color: var(--color-secondary);
-  font-family: Coco;
+  font-family: 'Coco', sans-serif;
   font-style: normal;
   font-size: 3rem;
   line-height: 3.2rem;
@@ -194,7 +194,7 @@ h1 {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.5rem;
   padding: 1.6rem;
   width: 90%;
   margin: 0 auto 2rem 2rem;
@@ -202,7 +202,7 @@ h1 {
 
 .date {
   color: var(--color-text);
-  font-family: Coco;
+  font-family: 'Coco', sans-serif;
   font-style: normal;
   font-size: 2.8rem;
   line-height: 2rem;
@@ -267,6 +267,7 @@ h1 {
 
   .homePage {
     background-image: url(./images/bg.png);
+    height: 73rem;
   }
 
   .mainTitle {
@@ -334,10 +335,11 @@ h1 {
   background-color: rgb(61, 64, 71, 0.7);
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 3rem;
+  padding: 1.6rem 1rem;
+  width: 100%;
 }
 
 .prog img {
@@ -346,6 +348,7 @@ h1 {
 }
 
 .prog h4 {
+  width: 15%;
   color: var(--color-secondary);
   font-size: 1.6rem;
   font-style: normal;
@@ -353,8 +356,10 @@ h1 {
 }
 
 .prog p {
+  padding-left: 1rem;
+  width: 55%;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
@@ -367,7 +372,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
-  padding: 3rem 6rem;
+  padding: 2rem 6rem;
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -395,7 +400,7 @@ h1 {
   }
 
   .hr_main {
-    width: 7%;
+    width: 5%;
   }
 
   .grid-container {
@@ -406,10 +411,18 @@ h1 {
 
   .prog {
     flex-direction: column;
+    height: 97%;
+    justify-content: flex-start;
+  }
+
+  .prog h4 {
+    width: auto;
   }
 
   .prog p {
+    width: auto;
     text-align: center;
+    padding-left: 0;
   }
 
   .join {
@@ -417,6 +430,7 @@ h1 {
   }
 
   .seeMore {
+    width: 30%;
     display: flex;
     color: #fff;
     font-size: 1.6rem;
@@ -428,6 +442,11 @@ h1 {
     text-decoration: underline;
     padding-top: 3rem;
     word-spacing: 0.3rem;
+    margin: 0 auto;
+  }
+
+  .seeMore:hover {
+    color: var(--color-secondary);
   }
 }
 
@@ -442,7 +461,7 @@ h1 {
 }
 
 .hr_speech {
-  width: 5%;
+  width: 10%;
   border-radius: 1px;
   margin: 1rem auto;
   border-color: var(--color-primary);
@@ -525,14 +544,11 @@ h1 {
 @media screen and (min-width: 768px) {
   .containerAllSpeakers {
     grid-template-columns: 1fr 1fr;
+    margin: 0 10% 3rem 10%;
   }
 
   #moreBtn {
     display: none;
-  }
-
-  .containerAllSpeakers {
-    margin: 0 10% 3rem 10%;
   }
 
   .containerSpeaker:nth-child(1n+3) {
@@ -541,6 +557,10 @@ h1 {
 
   .photoSpeaker {
     margin-left: 5%;
+  }
+
+  .hr_speech {
+    width: 5%;
   }
 }
 
@@ -558,11 +578,11 @@ h1 {
   font-weight: 500;
   line-height: 2rem;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 0 2rem 0;
 }
 
 .hr_partner {
-  width: 7%;
+  width: 10%;
   border-radius: 1px;
   margin: 0 auto;
   border-color: var(--color-secondary);
@@ -591,10 +611,8 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-
-
   .hr_partner {
-    width: 4%;
+    width: 5%;
   }
 }
 

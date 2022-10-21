@@ -74,7 +74,7 @@ const containerAllSpeakers = document.createElement('div');
 containerAllSpeakers.className = 'containerAllSpeakers';
 speech.appendChild(containerAllSpeakers);
 
-// Speaker One
+// Speakers
 
 for (let i = 0; i < speakers.length; i += 1) {
   const containerSpeakerOne = document.createElement('div');
