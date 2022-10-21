@@ -21,14 +21,14 @@
                 <li>Logout</li>
             </ul>
             <div class="navBar">
-                <span class="logo"><a href="#"><img class="logoImg" src="./images/Global-Summit2022.png" alt=""></a></span>
+                <span class="logo"><a href="./homePage.html"><img class="logoImg" src="./images/Global-Summit2022.png" alt=""></a></span>
                 <ul class="bottomNav">
-                    <li><a href="./aboutPage.html">About</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Sponsor</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><button class="btn">IAM Campaign</button></li>
+                    <li><a class="menuItem" href="./aboutPage.html">About</a></li>
+                    <li><a class="menuItem" href="#">Program</a></li>
+                    <li><a class="menuItem" href="#">Join</a></li>
+                    <li><a class="menuItem" href="#">Sponsor</a></li>
+                    <li><a class="menuItem" href="#">News</a></li>
+                    <li><button class="menuItem" id="btn">IAM Campaign</button></li>
                 </ul>
             </div>
         </nav>
@@ -36,7 +36,7 @@
     <main>
         <section class="homePage">
             <button class="menuIcon"><img src="images/bars-solid.svg" alt="Menu" /></button>
-            <button class="closeIcon"><img src="images/xmark-solid.svg" alt="CloseIcon" /></button>
+            <button class="closeIcon"><img src="images/close.png" alt="CloseIcon" /></button>
             <div class="mainTitle">
                 <h3 class="hello">"Hello! Mental Athletes"</h3>
                 <h1>International Association of Memory Global Summit 2022</h1>
@@ -78,9 +78,7 @@
             <button class="join">Join IAM Global Summit 2022</button>
             <a class="seeMore" href="#">See the whole program</a>
         </section>
-        <section class="speakers">
-     
-        </section>
+        <section class="speech"></section>
         <section class="partner">
             <h3 class="h3_partner">Partner</h3>
             <hr class="hr_partner">
@@ -97,6 +95,7 @@
         <span class="logo"><a href="#"><img class="footerImg" src="./images/IAM-main-Logo.png" alt=""></a></span>
         <p>2022 International Memory Association. Some Rights Reserved.</p>
     </footer>
+    <script src="./menu.js"></script>
     <script src="./featuredSpeakers.js"></script>
 </body>
 </html>
