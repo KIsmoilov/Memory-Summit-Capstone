@@ -376,7 +376,7 @@ h1 {
 .imgChamp {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
@@ -384,25 +384,56 @@ h1 {
 .firstChamp,
 .secondChamp {
   display: flex;
-  align-self: center;
-  background-image: url(./images/wmc2017.jpeg);
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/WMC2017.png);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  width: 44rem;
-  height: 24rem;
+  width: 100%;
+  height: auto;
+  padding: 20% 0 18% 0;
+}
+
+.firstChamp h4,
+.secondChamp h4 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.firstChamp p,
+.secondChamp p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .secondChamp {
-  background-image: url(./images/wmc2019.webp);
+  background-image: url(./images/WMC2019.png);
 }
 
 @media screen and (min-width: 768px) {
   .imgChamp {
     flex-direction: row;
-    gap: 2%;
-    justify-content: center;
-    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .firstChamp,
+  .secondChamp {
+    padding: 7% 0;
+    height: 30rem;
+  }
+
+  .firstChamp h4,
+  .secondChamp h4 {
+    font-size: 4rem;
+  }
+
+  .firstChamp p,
+  .secondChamp p {
+    font-size: 2rem;
   }
 }
 
@@ -471,7 +502,7 @@ h1 {
   align-items: flex-end;
   justify-content: space-evenly;
   gap: 4rem;
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 2rem;
 }
 
 .footerImg {
@@ -491,8 +522,8 @@ h1 {
 @media screen and (min-width: 768px) {
   .footerHome {
     background: #2e2e2e;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
     gap: 2rem;
     padding: 4rem 2rem;
   }
@@ -506,5 +537,41 @@ h1 {
     filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(335deg) brightness(101%) contrast(105%);
     width: 23rem;
     height: 8rem;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background: rgb(40, 41, 48, 0.8);
+  padding: 0.5rem;
+  border: 1px solid rgb(40, 41, 48);
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top img {
+  filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(122deg) brightness(106%) contrast(104%);
+}
+
+.back-to-top:hover {
+  opacity: 90%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .back-to-top {
+    right: 2rem;
+    bottom: 2rem;
+    width: 6rem;
+    height: 6rem;
   }
 }

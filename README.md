@@ -32,9 +32,10 @@ Give a ⭐️ if you like this project!
 
 The following useful resources were used to complete this project.
 
+- [Cindy Shin in Behance](https://www.behance.net/adagio07)
+- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 - [Linters Config](https://github.com/microverseinc/linters-config)
 - [How to use GitHub flow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/github_flow.md)
-- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 📝 License
 
