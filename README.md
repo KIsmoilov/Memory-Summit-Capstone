@@ -9,7 +9,7 @@
 
 
 ## Live Demo (if available)
-Please use the following [link](https://kismoilov.github.io/capstone.github.io/) to access the website: https://kismoilov.github.io/capstone.github.io// 
+Please use the following [link](https://kismoilov.github.io/Memory-Summit-Capstone/) to access the website: https://kismoilov.github.io/Memory-Summit-Capstone/ 
 ## Getting Started
 
 This is a simple project created using HTML & CSS and JavaScript. If you would like to use it in your projects or make a contribution to it, feel free to clone it to your code editor. Please use live server to see the visual result on internet browsers.
